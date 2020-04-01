@@ -1,4 +1,5 @@
 import CreateKeyboardHTML from "./classes/createHTML/CreateKeyboardHTML.js";
+import KeyDownAddStyleClass from "./classes/keyboard/KeyDownAddStyleClass.js";
 const virtualKeyboardHtml = new CreateKeyboardHTML();
 virtualKeyboardHtml.createHTML();
 
