@@ -1,10 +1,10 @@
-import CreateKeyboardHTML from './classes/createHTML/CreateKeyboardHTML.js';
-import KeyDownAddStyleClass from './classes/keyboard/KeyDownAddStyleClass.js';
-import KeyUpRemoveStyleClass from './classes/keyboard/KeyUpRemoveStyleClass.js';
-import MouseDownAddText from './classes/mouse/MouseDownAddText.js';
-import MouseUpRemoveStyle from './classes/mouse/MouseUpRemoveStyle.js';
-import TextareaAddText from './classes/textarea/TextareaAddText.js';
-import MouseOver from './classes/mouse/MouseOver.js';
+import CreateKeyboardHTML from './src/classes/createHTML/CreateKeyboardHTML.js';
+import KeyDownAddStyleClass from './src/classes/keyboard/KeyDownAddStyleClass.js';
+import KeyUpRemoveStyleClass from './src/classes/keyboard/KeyUpRemoveStyleClass.js';
+import MouseDownAddText from './src/classes/mouse/MouseDownAddText.js';
+import MouseUpRemoveStyle from './src/classes/mouse/MouseUpRemoveStyle.js';
+import TextareaAddText from './src/classes/textarea/TextareaAddText.js';
+import MouseOver from './src/classes/mouse/MouseOver.js';
 
 const virtualKeyboardHtml = new CreateKeyboardHTML();
 virtualKeyboardHtml.createHTML();
