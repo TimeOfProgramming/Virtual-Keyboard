@@ -218,3 +218,16 @@ const set = () => {
 };
 
 set();
+
+const keydownAddStyle = new KeyDownAddStyleClass(up, down, capsLock, ru, en);
+const keyUpRemoveStyle = new KeyUpRemoveStyleClass(up, down, capsLock, ru, en);
+const mouseDownAddText = new MouseDownAddText(up, down, capsLock, ru, en, date, textarea);
+const mouseUpRemoveStyle = new MouseUpRemoveStyle(up, down, capsLock, textarea);
+const textareaAddText = new TextareaAddText(up, down, ru, date, textarea);
+const mouseOverRemoveStyle = new MouseOver(up, down, capsLock, textarea);
+document.addEventListener('keydown', keydownAddStyle);
+document.addEventListener('keyup', keyUpRemoveStyle);
+wrapper2.addEventListener('mousedown', mouseDownAddText);
+wrapper2.addEventListener('mouseup', mouseUpRemoveStyle);
+document.addEventListener('keydown', textareaAddText);
+wrapper2.addEventListener('mouseout', mouseOverRemoveStyle);
