@@ -1,6 +1,8 @@
 import CreateKeyboardHTML from "./classes/createHTML/CreateKeyboardHTML.js";
 import KeyDownAddStyleClass from "./classes/keyboard/KeyDownAddStyleClass.js";
 import KeyUpRemoveStyleClass from "./classes/keyboard/KeyUpRemoveStyleClass.js";
+import MouseDownAddText from "./classes/mouse/MouseDownAddText.js";
+import MouseUpRemoveStyle from "./classes/mouse/MouseUpRemoveStyle.js";
 const virtualKeyboardHtml = new CreateKeyboardHTML();
 virtualKeyboardHtml.createHTML();
 
