@@ -1,3 +1,7 @@
+import CreateKeyboardHTML from "./classes/createHTML/CreateKeyboardHTML.js";
+const virtualKeyboardHtml = new CreateKeyboardHTML();
+virtualKeyboardHtml.createHTML();
+
 const textarea = document.querySelector('.textarea');
 const wrapper2 = document.querySelector('.wrapper2');
 const up = document.querySelectorAll('.caseUp');
