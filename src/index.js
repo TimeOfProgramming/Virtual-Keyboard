@@ -188,3 +188,29 @@ const obj = {
     1: '►', 2: '►', 3: '►', 4: '►',
   },
 };
+
+const date = new Map(Object.entries(obj));
+
+const set = () => {
+  let a = '';
+  if (localStorage.length !== 0) {
+    a = localStorage.getItem('lang');
+    if (a === 'ru') {
+      for (let i = 0; i < ru.length; i += 1) {
+        ru[i].hidden = false;
+      }
+      for (let i = 0; i < en.length; i += 1) {
+        en[i].hidden = true;
+      }
+    } else {
+      for (let i = 0; i < ru.length; i += 1) {
+        ru[i].hidden = true;
+      }
+      for (let i = 0; i < en.length; i += 1) {
+        en[i].hidden = false;
+      }
+    }
+  } else return;
+};
+
+set();
