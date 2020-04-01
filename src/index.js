@@ -1,12 +1,14 @@
-import CreateKeyboardHTML from "./classes/createHTML/CreateKeyboardHTML.js";
-import KeyDownAddStyleClass from "./classes/keyboard/KeyDownAddStyleClass.js";
-import KeyUpRemoveStyleClass from "./classes/keyboard/KeyUpRemoveStyleClass.js";
-import MouseDownAddText from "./classes/mouse/MouseDownAddText.js";
-import MouseUpRemoveStyle from "./classes/mouse/MouseUpRemoveStyle.js";
-import TextareaAddText from "./classes/textarea/TextareaAddText.js";
-import MouseOver from "./classes/mouse/MouseOver.js";
+import CreateKeyboardHTML from './classes/createHTML/CreateKeyboardHTML.js';
+import KeyDownAddStyleClass from './classes/keyboard/KeyDownAddStyleClass.js';
+import KeyUpRemoveStyleClass from './classes/keyboard/KeyUpRemoveStyleClass.js';
+import MouseDownAddText from './classes/mouse/MouseDownAddText.js';
+import MouseUpRemoveStyle from './classes/mouse/MouseUpRemoveStyle.js';
+import TextareaAddText from './classes/textarea/TextareaAddText.js';
+import MouseOver from './classes/mouse/MouseOver.js';
+
 const virtualKeyboardHtml = new CreateKeyboardHTML();
 virtualKeyboardHtml.createHTML();
+
 
 const textarea = document.querySelector('.textarea');
 const wrapper2 = document.querySelector('.wrapper2');
@@ -15,6 +17,10 @@ const down = document.querySelectorAll('.caseDown');
 const ru = document.querySelectorAll('.ru');
 const en = document.querySelectorAll('.en');
 const capsLock = document.querySelector('.CapsLock');
+
+document.addEventListener('keydown', () => {
+  textarea.focus();
+});
 
 const obj = {
   Backquote: {

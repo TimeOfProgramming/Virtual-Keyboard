@@ -20,12 +20,9 @@ export default class KeyUpRemoveStyleClass extends KeyDownAddStyleClass {
         }
         break;
       case 'CapsLock': return;
-        break;
+
       default:
-        let add = event.code;
-        let a = `.${add}`;
-        let test = document.querySelector(a);
-        test.classList.remove('active');
+        document.querySelector(`.${event.code}`).classList.remove('active');
     }
   }
 }

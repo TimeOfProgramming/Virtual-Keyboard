@@ -5,8 +5,16 @@
     },
     "extends": ["airbnb/base"],
     "rules": {
-        "semi": "off",
+        "semi": "error",
         "no-plusplus": "off",
-        "eol-last": "off"
+        "eol-last": "off",
+        "linebreak-style": 0,
+        "import/extensions": "off",
+        "consistent-return": "off",
+        "class-methods-use-this": "off",
+        "no-useless-constructor": "off",
+        "no-unused-expressions": "off",
+        "no-param-reassign": "off",
+        "no-useless-return": "off"
     }
 }
