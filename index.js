@@ -137,6 +137,9 @@ const obj = {
   ShiftLeft: {
     1: '', 2: '', 3: '', 4: '',
   },
+  ShiftRight: {
+    1: '', 2: '', 3: '', 4: '',
+  },
   ControlLeft: {
     1: '', 2: '', 3: '', 4: '',
   },
@@ -220,7 +223,8 @@ const set = () => {
         en[i].hidden = false;
       }
     }
-  } else return;
+  }
+  return;
 };
 
 set();
