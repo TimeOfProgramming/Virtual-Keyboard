@@ -67,5 +67,10 @@ export default class CreateKeyboardHTML {
       d++;
       wrapperTwo.append(div);
     }
+
+    const language = document.createElement('div');
+    language.className = 'check-lang';
+    language.textContent = 'ctrl + alt - language selection';
+    wrapper.append(language);
   }
 }

@@ -4,8 +4,8 @@
   "description": "",
   "main": "index.js",
   "scripts": {
-    "lint": "eslint ./src",
-    "lint:fix": "eslint ./src --fix"
+    "lint": "eslint /Virtual-Keyboard ./src",
+    "lint:fix": "eslint /Virtual-Keyboard ./src --fix"
   },
   "repository": {
     "type": "git",
